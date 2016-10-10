@@ -1,0 +1,9 @@
+FROM node:latest
+# RUN apt-get update -qq && apt-get install -y build-essential
+
+# Install nodemon
+RUN npm install -g nodemon
+
+EXPOSE 5005 5858
+
+ENTRYPOINT ["npm", "start"]

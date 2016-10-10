@@ -1,0 +1,14 @@
+{
+  "name": "salient-service",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "nodemon -L --debug=5858 server.js"
+  },
+  "dependencies": {
+    "basic-authorization-header": "^0.2.7",
+    "express": "^4.13.4",
+    "json-server": "^0.8.14",
+    "lodash": "^4.13.1",
+    "nats": "^0.6.4"
+  }
+}
