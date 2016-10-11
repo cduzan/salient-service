@@ -1,6 +1,0 @@
-{
-    "service_mode": "proxy",
-    "proxy_config" : {
-        "url": "nats:orion-nats:4222"
-    }
-}

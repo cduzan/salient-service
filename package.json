@@ -6,9 +6,7 @@
   },
   "dependencies": {
     "basic-authorization-header": "^0.2.7",
-    "express": "^4.13.4",
-    "json-server": "^0.8.14",
-    "lodash": "^4.13.1",
-    "nats": "^0.6.4"
+    "nats": "^0.6.4",
+    "node-base64-image": "^1.0.1"
   }
 }

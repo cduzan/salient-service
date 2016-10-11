@@ -1,9 +1,0 @@
-{
-  "mode": "proxy",
-  "transport": "nats",
-  "transports" : {
-    "nats": {
-      "url": "nats://52.53.199.234:4222"
-    }
-  }
-}
