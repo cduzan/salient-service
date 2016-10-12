@@ -1,5 +1,5 @@
 var natsOptions = {
-    url: "nats://127.0.0.1:4222",
+    url: "nats://oriondev.commandbridge.com:4222",
     reconnect: true,
     maxReconnectAttempts: 5,
     reconnectTimeWait: 1000
@@ -35,6 +35,7 @@ nats.subscribe('‌getSalientSnapshot', function(request, replyTo) {
         nats.publish(replyTo, JSON.stringify(msg));
     });
 });
+console.log('Subscribe to: getSalientSnapshot');
 
 function getSalientSnapshot(endpoint, callback) {
 
@@ -71,7 +72,6 @@ function getSalientSnapshot(endpoint, callback) {
             console.log(err);
             return callback(err);
         }
-        console.log(result);
         return callback(err, result);
     });
 }
