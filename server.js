@@ -6,6 +6,8 @@ var natsOptions = {
 };
 
 var nats = require('nats').connect(natsOptions);
+var request = require('request');
+var basic = require('basic-authorization-header');
 var base64 = require('node-base64-image');
 
 nats.on('error', function(e) {
